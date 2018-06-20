@@ -147,7 +147,7 @@ public class IndexBar extends View {
             measureWidth = Math.max(indexBounds.width(), measureWidth);//循环结束后，得到index的最大宽度
             measureHeight = Math.max(indexBounds.width(), measureHeight);//循环结束后，得到index的最大高度，然后*size
         }
-        measureHeight *= mIndexDatas.size()+15;
+        measureHeight *= mIndexDatas.size()*2;
         switch (wMode) {
             case MeasureSpec.EXACTLY:
                 measureWidth = wSize;
